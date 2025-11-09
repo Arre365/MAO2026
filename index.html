@@ -10,9 +10,14 @@
 <body>
     <header>
         <div class="container">
-            <div class="logo-header">
-                <h1>NEWS DE BALBALA</h1>
-                <p class="tagline">SOUTIEN IOG 2026</p>
+            <div class="header-with-logo">
+                <div class="logo-container">
+                    <img src="images/logo-balbala.png" alt="Logo News de Balbala" onerror="this.src='https://via.placeholder.com/80x80/0056b3/ffffff?text=NB'">
+                </div>
+                <div class="logo-text">
+                    <h1>NEWS DE BALBALA</h1>
+                    <p class="tagline">SOUTIEN IOG 2026</p>
+                </div>
             </div>
             <p class="slogan">Nous informons, rassemblons et facilitons votre participation à la victoire dès aujourd'hui !</p>
         </div>
@@ -32,12 +37,67 @@
 
     <div class="container main-content">
         <main>
-            <section class="hero">
+            <!-- Section Hero avec image de fond -->
+            <section class="hero-with-bg">
                 <h2>Bienvenue sur News de Balbala</h2>
                 <p>Votre source d'information privilégiée pour suivre l'actualité politique, les campagnes de sensibilisation et les événements en lien avec les Jeux Olympiques de la Jeunesse 2026.</p>
                 <div class="cta-buttons">
                     <a href="news.html" class="btn">Voir les actualités</a>
                     <a href="projects.html" class="btn secondary">Découvrir nos projets</a>
+                </div>
+            </section>
+
+            <!-- Nouvelle section : Diagramme de croissance -->
+            <section class="growth-section">
+                <h2>Croissance et Développement de Balbala</h2>
+                <p class="section-subtitle">Suivi des indicateurs clés en prévision des IOG 2026</p>
+                
+                <div class="growth-container">
+                    <div class="growth-chart">
+                        <h3>Évolution des Investissements (en millions FD)</h3>
+                        <div class="chart-bars">
+                            <div class="chart-bar" style="height: 40%;" data-value="45M">
+                                <span class="chart-bar-label">2021</span>
+                            </div>
+                            <div class="chart-bar" style="height: 60%;" data-value="68M">
+                                <span class="chart-bar-label">2022</span>
+                            </div>
+                            <div class="chart-bar" style="height: 85%;" data-value="92M">
+                                <span class="chart-bar-label">2023</span>
+                            </div>
+                            <div class="chart-bar" style="height: 120%;" data-value="145M">
+                                <span class="chart-bar-label">2024</span>
+                            </div>
+                            <div class="chart-bar" style="height: 180%;" data-value="210M">
+                                <span class="chart-bar-label">2025*</span>
+                            </div>
+                        </div>
+                        <p style="text-align: center; font-size: 0.9rem; margin-top: 2rem;">* Projection avec les investissements IOG</p>
+                    </div>
+                    
+                    <div class="growth-info">
+                        <h3>Indicateurs de Performance</h3>
+                        <p>Les investissements à Balbala connaissent une croissance exponentielle grâce aux préparatifs des IOG 2026, avec des impacts positifs sur :</p>
+                        
+                        <div class="growth-stats">
+                            <div class="stat-card">
+                                <span class="stat-number">+42%</span>
+                                <span class="stat-label">Création d'emplois</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">+35%</span>
+                                <span class="stat-label">Infrastructures</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">+28%</span>
+                                <span class="stat-label">Formation jeunesse</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">+65%</span>
+                                <span class="stat-label">Investissements privés</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -166,6 +226,9 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="images/logo-balbala.png" alt="Logo News de Balbala" width="50" onerror="this.src='https://via.placeholder.com/50x50/0056b3/ffffff?text=NB'">
+                    </div>
                     <h4>NEWS DE BALBALA</h4>
                     <p>Votre source d'information pour les actualités politiques, les campagnes de sensibilisation et les événements en lien avec les IOG 2026.</p>
                 </div>
@@ -193,10 +256,20 @@
     </footer>
 
     <script>
-        // Script pour le formulaire de newsletter
+        // Animation pour les barres du diagramme
         document.addEventListener('DOMContentLoaded', function() {
+            // Animation des barres du graphique
+            const bars = document.querySelectorAll('.chart-bar');
+            bars.forEach(bar => {
+                const originalHeight = bar.style.height;
+                bar.style.height = '0%';
+                setTimeout(() => {
+                    bar.style.height = originalHeight;
+                }, 500);
+            });
+
+            // Newsletter form
             const newsletterForms = document.querySelectorAll('.newsletter-form');
-            
             newsletterForms.forEach(form => {
                 form.addEventListener('submit', function(e) {
                     e.preventDefault();
@@ -205,34 +278,23 @@
                     this.reset();
                 });
             });
-            
-            // Ajout de styles pour les placeholders de vidéo
-            const style = document.createElement('style');
-            style.textContent = `
-                .video-placeholder {
-                    background: linear-gradient(135deg, #0056b3, #003d82);
-                    height: 200px;
-                    border-radius: 8px;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-                    color: white;
-                    text-align: center;
-                    padding: 1rem;
-                    cursor: pointer;
-                    transition: transform 0.3s;
-                }
-                .video-placeholder:hover {
-                    transform: scale(1.02);
-                }
-                .video-icon {
-                    font-size: 3rem;
-                    margin-bottom: 1rem;
-                }
-            `;
-            document.head.appendChild(style);
         });
+
+        // Styles pour les nouveaux éléments
+        const newStyles = `
+            .footer-logo {
+                margin-bottom: 1rem;
+            }
+            .section-subtitle {
+                text-align: center;
+                color: var(--gray-color);
+                margin-bottom: 2rem;
+                font-size: 1.1rem;
+            }
+        `;
+        const styleSheet = document.createElement('style');
+        styleSheet.textContent = newStyles;
+        document.head.appendChild(styleSheet);
     </script>
 </body>
 </html>
