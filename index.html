@@ -3,188 +3,345 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>News de Balbala - Actualités de Djibouti</title>
+    <title>NEWS DE BALBALA – SOUTIEN IOG 2026</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header -->
     <header>
         <div class="container">
-            <div class="header-content">
-                <div class="logo">
-                    <h1>News de <span>Balbala</span></h1>
+            <div class="header-with-logo">
+                <div class="logo-container">
+                    <img src="images/logo-balbala.png" alt="Logo News de Balbala" onerror="this.src='https://via.placeholder.com/80x80/0056b3/ffffff?text=NB'">
                 </div>
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Accueil</a></li>
-                        <li><a href="news.html">Actualités</a></li>
-                        <li><a href="projects.html">Projets</a></li>
-                        <li><a href="videos.html">Vidéos</a></li>
-                        <li><a href="about.html">À propos</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
+                <div class="logo-text">
+                    <h1>NEWS DE BALBALA</h1>
+                    <p class="tagline">SOUTIEN IOG 2026</p>
+                </div>
             </div>
+            <p class="slogan">Nous informons, rassemblons et facilitons votre participation à la victoire dès aujourd'hui !</p>
         </div>
     </header>
 
-    <div class="container">
-        <!-- Section Bienvenue -->
-        <section class="welcome-section">
-            <div class="welcome-content">
-                <h1>Bienvenue sur News de Balbala</h1>
-                <p>Votre source d'information privilégiée sur l'actualité de Djibouti, de Balbala et de ses environs. Découvrez les dernières nouvelles, analyses et reportages.</p>
-            </div>
-        </section>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="projects.html">Projets</a></li>
+                <li><a href="news.html">Actualités</a></li>
+                <li><a href="videos.html">Vidéos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-        <!-- Layout principal -->
-        <div class="main-layout">
-            <!-- Colonne gauche -->
-            <div class="left-sidebar">
-                <!-- Galerie photo -->
-                <div class="photo-gallery">
-                    <h3>Galerie Photo</h3>
-                    <div class="gallery-grid">
-                        <img src="images/photo1.jpg" alt="Photo 1" onerror="this.src='https://via.placeholder.com/300x200/1e5799/ffffff?text=Photo+1'">
-                        <img src="images/photo2.jpg" alt="Photo 2" onerror="this.src='https://via.placeholder.com/300x200/207cca/ffffff?text=Photo+2'">
-                        <img src="images/photo3.jpg" alt="Photo 3" onerror="this.src='https://via.placeholder.com/300x200/1e5799/ffffff?text=Photo+3'">
-                        <img src="images/photo4.jpg" alt="Photo 4" onerror="this.src='https://via.placeholder.com/300x200/207cca/ffffff?text=Photo+4'">
-                        <img src="images/photo5.jpg" alt="Photo 5" onerror="this.src='https://via.placeholder.com/300x200/1e5799/ffffff?text=Photo+5'">
-                        <img src="images/photo6.jpg" alt="Photo 6" onerror="this.src='https://via.placeholder.com/300x200/207cca/ffffff?text=Photo+6'">
+    <div class="container main-content">
+        <main>
+            <!-- Section Hero avec image de fond -->
+            <section class="hero-with-bg">
+                <h2>Bienvenue sur News de Balbala</h2>
+                <p>Votre source d'information privilégiée pour suivre l'actualité politique, les campagnes de sensibilisation et les événements en lien avec la Compagne électorale 2026.</p>
+                <div class="cta-buttons">
+                    <a href="news.html" class="btn">Voir les actualités</a>
+                    <a href="projects.html" class="btn secondary">Découvrir nos projets</a>
+                </div>
+            </section>
+
+            <!-- Article de synthèse avec photo du journaliste -->
+            <section class="featured-article-main">
+                <div class="journalist-presentation">
+                    <div class="journalist-photo">
+                        <img src="images/journalist.jpg" alt="Photo du journaliste" onerror="this.src='https://via.placeholder.com/150x150/0056b3/ffffff?text=Photo'">
+                    </div>
+                    <div class="journalist-info">
+                        <h3>Ahmed Mohamed</h3>
+                        <p class="journalist-title">Rédacteur en chef</p>
+                        <p class="publication-date">Publié le 15 décembre 2023</p>
                     </div>
                 </div>
-
-                <!-- Dernières vidéos -->
-                <div class="video-sidebar">
-                    <h3>Dernières Vidéos</h3>
-                    <div class="video-list">
-                        <div class="video-item">
-                            <div class="video-thumbnail">
-                                <img src="images/video-thumb1.jpg" alt="Vidéo 1" onerror="this.src='https://via.placeholder.com/150x100/1e5799/ffffff?text=Vidéo+1'">
-                                <div class="play-icon">▶</div>
-                            </div>
-                            <div class="video-info">
-                                <h4>Interview exclusive</h4>
-                                <span class="video-date">12 déc. 2023</span>
-                            </div>
+                <div class="article-summary">
+                    <h2>Synthèse de la semaine : Développement et initiatives à Balbala</h2>
+                    <p class="article-excerpt">
+                        Cette semaine à Djibouti a été marquée par d'importantes annonces économiques et des initiatives sociales prometteuses. Le gouvernement a dévoilé un nouveau plan de développement pour Balbala, tandis que plusieurs projets d'infrastructure avancent à bon rythme. Découvrez les points clés de l'actualité de notre région.
+                    </p>
+                    <div class="article-highlights">
+                        <div class="highlight-item">
+                            <span class="highlight-badge">Économie</span>
+                            <p>Nouveau port de Doraleh: 15% d'augmentation du trafic maritime</p>
                         </div>
-                        <div class="video-item">
-                            <div class="video-thumbnail">
-                                <img src="images/video-thumb2.jpg" alt="Vidéo 2" onerror="this.src='https://via.placeholder.com/150x100/207cca/ffffff?text=Vidéo+2'">
-                                <div class="play-icon">▶</div>
-                            </div>
-                            <div class="video-info">
-                                <h4>Reportage terrain</h4>
-                                <span class="video-date">10 déc. 2023</span>
-                            </div>
+                        <div class="highlight-item">
+                            <span class="highlight-badge">Social</span>
+                            <p>Lancement de 3 nouveaux centres de formation professionnelle</p>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-badge">Environnement</span>
+                            <p>Plan national pour les énergies renouvelables: objectif 50% d'ici 2035</p>
                         </div>
                     </div>
-                    <a href="videos.html" class="see-more-btn">Voir toutes les vidéos</a>
+                    <a href="articles/synthese-semaine.html" class="read-more">Lire la synthèse complète</a>
                 </div>
+            </section>
 
-                <!-- Widget dynamique -->
-                <div class="dynamic-widget">
-                    <div class="widget-container">
-                        <div class="widget-slide active">
-                            <h3>Croissance et Développement de Djibouti</h3>
-                            <p>Djibouti poursuit sa croissance économique avec un PIB en hausse de 7% cette année.</p>
-                        </div>
-                        <div class="widget-slide">
-                            <h3>Indicateur: Croissance économique</h3>
+            <!-- Widget dynamique Croissance et Indicateurs -->
+            <section class="dynamic-widget-section">
+                <div class="widget-container">
+                    <div class="widget-slide active">
+                        <h3>Croissance et Développement de Djibouti</h3>
+                        <p>Djibouti poursuit sa croissance économique avec un PIB en hausse de 7% cette année, grâce aux investissements dans les infrastructures et au développement du port de Doraleh.</p>
+                    </div>
+                    <div class="widget-slide">
+                        <h3>Indicateur de Performance: Croissance économique</h3>
+                        <div class="progress-indicator">
                             <div class="progress-bar">
                                 <div class="progress-value" style="width: 75%"></div>
                             </div>
-                            <p>+7.2% de croissance cette année</p>
+                            <span class="progress-text">+7.2% de croissance cette année</span>
                         </div>
-                        <div class="widget-slide">
-                            <h3>Indicateur: Investissements étrangers</h3>
+                    </div>
+                    <div class="widget-slide">
+                        <h3>Indicateur de Performance: Investissements</h3>
+                        <div class="progress-indicator">
                             <div class="progress-bar">
                                 <div class="progress-value" style="width: 65%"></div>
                             </div>
-                            <p>+15% d'investissements cette année</p>
+                            <span class="progress-text">+15% d'investissements cette année</span>
                         </div>
                     </div>
-                    <div class="widget-dots">
-                        <span class="dot active"></span>
-                        <span class="dot"></span>
-                        <span class="dot"></span>
+                    <div class="widget-slide">
+                        <h3>Indicateur de Performance: Emplois</h3>
+                        <div class="progress-indicator">
+                            <div class="progress-bar">
+                                <div class="progress-value" style="width: 50%"></div>
+                            </div>
+                            <span class="progress-text">+5.000 emplois créés cette année</span>
+                        </div>
                     </div>
+                </div>
+                <div class="widget-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </section>
+
+            <section class="featured-news">
+                <h2>Actualités récentes</h2>
+                <div class="news-grid">
+                    <article class="news-card">
+                        <div class="news-image">
+                            <img src="images/news33.png" alt="Réunion de préparation IOG 2026" onerror="this.src='https://via.placeholder.com/400x300/0056b3/ffffff?text=IOG+2026'">
+                        </div>
+                        <div class="news-content">
+                            <h3>Réunion de préparation pour les IOG 2026</h3>
+                            <p class="date">15 octobre 2025</p>
+                            <p>Les autorités locales se réunissent pour discuter des préparatifs des Jeux Olympiques de la Jeunesse 2026 et des bénéfices pour notre région.</p>
+                            <a href="articles/article1.html" class="read-more">Lire la suite</a>
+                        </div>
+                    </article>
+
+                    <article class="news-card">
+                        <div class="news-image">
+                            <img src="images/news2.jpg" alt="Campagne de sensibilisation" onerror="this.src='https://via.placeholder.com/400x300/ff6b00/ffffff?text=Campagne+Sensibilisation'">
+                        </div>
+                        <div class="news-content">
+                            <h3>Lancement de la campagne "Balbala s'engage"</h3>
+                            <p class="date">15 octobre 2025</p>
+                            <p>Une nouvelle campagne de sensibilisation vise à mobiliser les citoyens de Balbala en faveur du changement de la constitution pour permettre au Président de se représenter encore une fois !</p>
+                            <a href="articles/article1.html" class="read-more">Lire la suite</a>
+                        </div>
+                    </article>
+
+                    <article class="news-card">
+                        <div class="news-image">
+                            <img src="images/news3.jpg" alt="Événement sportif local" onerror="this.src='https://via.placeholder.com/400x300/28a745/ffffff?text=Événement+Sportif'">
+                        </div>
+                        <div class="news-content">
+                            <h3>Tournoi sportif inter-quartiers en prévision des IOG</h3>
+                            <p class="date">20 octobre 2025</p>
+                            <p>Un tournoi sportif réunissant les jeunes de différents quartiers de Balbala a connu un succès retentissant ce week-end.</p>
+                            <a href="articles/article1.html" class="read-more">Lire la suite</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="upcoming-events">
+                <h2>Événements à venir</h2>
+                <div class="events-list">
+                    <div class="event">
+                        <div class="event-date">
+                            <span class="day">25</span>
+                            <span class="month">Mars</span>
+                        </div>
+                        <div class="event-details">
+                            <h3>Conférence sur les bénéfices des IOG pour Balbala</h3>
+                            <p><strong>Lieu:</strong> Centre communautaire de Balbala</p>
+                            <p><strong>Heure:</strong> 15h00 - 17h00</p>
+                        </div>
+                    </div>
+
+                    <div class="event">
+                        <div class="event-date">
+                            <span class="day">02</span>
+                            <span class="month">Avr</span>
+                        </div>
+                        <div class="event-details">
+                            <h3>Atelier de formation pour volontaires IOG</h3>
+                            <p><strong>Lieu:</strong> Mairie de Balbala</p>
+                            <p><strong>Heure:</strong> 09h00 - 12h00</p>
+                        </div>
+                    </div>
+
+                    <div class="event">
+                        <div class="event-date">
+                            <span class="day">15</span>
+                            <span class="month">Avr</span>
+                        </div>
+                        <div class="event-details">
+                            <h3>Journée portes ouvertes du comité IOG Balbala</h3>
+                            <p><strong>Lieu:</strong> Siège du comité IOG</p>
+                            <p><strong>Heure:</strong> 10h00 - 16h00</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <aside>
+            <!-- Galerie photo déplacée à gauche -->
+            <div class="sidebar-section">
+                <h3>Galerie photo</h3>
+                <div class="gallery">
+                    <img src="images/gallery1.jpg" alt="Événement sportif" onerror="this.src='https://via.placeholder.com/200x150/0056b3/ffffff?text=Sport'">
+                    <img src="images/gallery2.jpg" alt="Réunion communautaire" onerror="this.src='https://via.placeholder.com/200x150/ff6b00/ffffff?text=Communauté'">
+                    <img src="images/gallery3.jpg" alt="Jeunes participants" onerror="this.src='https://via.placeholder.com/200x150/28a745/ffffff?text=Jeunesse'">
+                    <img src="images/gallery4.jpg" alt="Infrastructures sportives" onerror="this.src='https://via.placeholder.com/200x150/6c757d/ffffff?text=Infrastructure'">
+                    <img src="images/gallery5.jpg" alt="Cérémonie officielle" onerror="this.src='https://via.placeholder.com/200x150/0056b3/ffffff?text=Cérémonie'">
+                    <img src="images/gallery6.jpg" alt="Projets communautaires" onerror="this.src='https://via.placeholder.com/200x150/ff6b00/ffffff?text=Projet'">
                 </div>
             </div>
 
-            <!-- Colonne principale -->
-            <div class="main-content">
-                <!-- Article vedette -->
-                <div class="featured-article">
-                    <div class="journalist-info">
-                        <img src="images/journalist.jpg" alt="Photo du journaliste" class="journalist-photo" onerror="this.src='https://via.placeholder.com/200x200/1e5799/ffffff?text=Photo'">
-                        <div class="journalist-details">
-                            <h4>Ahmed Mohamed</h4>
-                            <p>Rédacteur en chef</p>
-                            <span class="publication-date">Publié le 15 décembre 2023</span>
+            <!-- Vidéos récentes -->
+            <div class="sidebar-section">
+                <h3>Vidéos récentes</h3>
+                <div class="video-sidebar">
+                    <div class="video-item">
+                        <div class="video-thumbnail">
+                            <img src="images/video-thumb1.jpg" alt="Vidéo 1" onerror="this.src='https://via.placeholder.com/120x68/0056b3/ffffff?text=Vidéo+1'">
+                            <div class="play-icon">▶</div>
+                        </div>
+                        <div class="video-info">
+                            <h4>Interview exclusive du Maire</h4>
+                            <span class="video-date">12 déc. 2023</span>
                         </div>
                     </div>
-                    
-                    <div class="article-summary">
-                        <h2>Synthèse de la semaine: Développement économique et initiatives sociales</h2>
-                        <p class="article-excerpt">
-                            Cette semaine à Djibouti a été marquée par d'importantes annonces économiques et des initiatives sociales prometteuses. Le gouvernement a dévoilé un nouveau plan de développement pour Balbala, tandis que plusieurs projets d'infrastructure avancent à bon rythme.
-                        </p>
-                        <div class="article-highlights">
-                            <div class="highlight-item">
-                                <span class="highlight-badge">Économie</span>
-                                <p>Nouveau port de Doraleh: 15% d'augmentation du trafic maritime</p>
-                            </div>
-                            <div class="highlight-item">
-                                <span class="highlight-badge">Social</span>
-                                <p>Lancement de 3 nouveaux centres de formation professionnelle</p>
-                            </div>
+                    <div class="video-item">
+                        <div class="video-thumbnail">
+                            <img src="images/video-thumb2.jpg" alt="Vidéo 2" onerror="this.src='https://via.placeholder.com/120x68/ff6b00/ffffff?text=Vidéo+2'">
+                            <div class="play-icon">▶</div>
                         </div>
-                        <button class="read-more-btn">Lire la synthèse complète</button>
+                        <div class="video-info">
+                            <h4>Reportage terrain à Balbala</h4>
+                            <span class="video-date">10 déc. 2023</span>
+                        </div>
                     </div>
                 </div>
-
-                <!-- Articles récents -->
-                <div class="recent-articles">
-                    <h2 class="section-title">Articles Récents</h2>
-                    <div class="articles-grid">
-                        <!-- Les articles seront chargés dynamiquement ou via PHP -->
-                    </div>
-                </div>
+                <a href="videos.html" class="see-more-btn">Voir toutes les vidéos</a>
             </div>
-        </div>
+
+            <div class="sidebar-section">
+                <h3>Restez informé</h3>
+                <p>Inscrivez-vous à notre newsletter pour recevoir les dernières actualités:</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Votre email" required>
+                    <button type="submit">S'inscrire</button>
+                </form>
+            </div>
+        </aside>
     </div>
 
-    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="footer-content">
-                <div class="footer-column">
-                    <h3>News de Balbala</h3>
-                    <p>Votre source d'information privilégiée sur l'actualité de Djibouti et de Balbala.</p>
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="images/logo-balbala.png" alt="Logo News de Balbala" width="50" onerror="this.src='https://via.placeholder.com/50x50/0056b3/ffffff?text=NB'">
+                    </div>
+                    <h4>NEWS DE BALBALA</h4>
+                    <p>Votre source d'information pour les actualités politiques, les campagnes de sensibilisation et les événements en lien avec les IOG 2026.</p>
                 </div>
-                <div class="footer-column">
-                    <h3>Catégories</h3>
+                <div class="footer-section">
+                    <h4>Liens rapides</h4>
                     <ul>
-                        <li><a href="news.html">Actualités</a></li>
-                        <li><a href="projects.html">Projets</a></li>
-                        <li><a href="videos.html">Vidéos</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h3>Liens utiles</h3>
-                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
                         <li><a href="about.html">À propos</a></li>
+                        <li><a href="projects.html">Projets</a></li>
+                        <li><a href="news.html">Actualités</a></li>
+                        <li><a href="videos.html">Vidéos</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: contact@newsbalbala.dj</p>
+                    <p>Téléphone: +253 XX XX XX XX</p>
+                    <p>Adresse: Balbala, Djibouti</p>
+                </div>
             </div>
-            <div class="copyright">
-                &copy; 2023 News de Balbala - Tous droits réservés
+            <div class="footer-bottom">
+                <p>&copy; 2024 NEWS DE BALBALA – SOUTIEN IOG 2026. Tous droits réservés.</p>
             </div>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script>
+        // Animation pour le widget dynamique
+        document.addEventListener('DOMContentLoaded', function() {
+            // Widget dynamique
+            const slides = document.querySelectorAll('.widget-slide');
+            const dots = document.querySelectorAll('.dot');
+            
+            if (slides.length > 0) {
+                let currentSlide = 0;
+                const totalSlides = slides.length;
+
+                function showSlide(index) {
+                    slides.forEach(slide => slide.classList.remove('active'));
+                    dots.forEach(dot => dot.classList.remove('active'));
+                    
+                    slides[index].classList.add('active');
+                    dots[index].classList.add('active');
+                    currentSlide = index;
+                }
+
+                // Démarrage de l'animation automatique
+                const slideInterval = setInterval(() => {
+                    currentSlide = (currentSlide + 1) % totalSlides;
+                    showSlide(currentSlide);
+                }, 4000);
+
+                // Navigation manuelle
+                dots.forEach((dot, index) => {
+                    dot.addEventListener('click', () => {
+                        clearInterval(slideInterval);
+                        showSlide(index);
+                    });
+                });
+            }
+
+            // Newsletter form
+            const newsletterForms = document.querySelectorAll('.newsletter-form');
+            newsletterForms.forEach(form => {
+                form.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    const email = this.querySelector('input[type="email"]').value;
+                    alert(`Merci de votre inscription avec l'email: ${email}`);
+                    this.reset();
+                });
+            });
+        });
+    </script>
 </body>
 </html>
