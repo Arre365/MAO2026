@@ -47,7 +47,217 @@
                     <a href="projects.html" class="btn secondary">Découvrir nos projets</a>
                 </div>
             </section>
+<!-- Section Synthèse de la semaine -->
+<section class="weekly-synthesis">
+    <div class="section-header">
+        <h2>📊 Synthèse de la semaine</h2>
+        <p>Analyse data-driven des évolutions éducatives</p>
+    </div>
+    
+    <div class="featured-article">
+        <div class="article-card">
+            <div class="article-badge">NOUVEAU</div>
+            <h3>Djibouti 2003-2024 : La transformation silencieuse de son système éducatif</h3>
+            
+            <div class="article-meta">
+                <span class="date">📅 25 Novembre 2025</span>
+                <span class="category">🏫 Éducation</span>
+                <span class="read-time">⏱️ 8 min de lecture</span>
+            </div>
+            
+            <p class="article-excerpt">
+                Une analyse approfondie de l'évolution du système éducatif djiboutien sur deux décennies, 
+                avec focus sur les réformes de 2016 et l'impact du Covid-19. Données officielles MENESUP.
+            </p>
+            
+            <div class="article-stats">
+                <div class="stat">
+                    <span class="number">+53%</span>
+                    <span class="label">Élèves primaire</span>
+                </div>
+                <div class="stat">
+                    <span class="number">+220%</span>
+                    <span class="label">Établissements secondaires</span>
+                </div>
+                <div class="stat">
+                    <span class="number">99%</span>
+                    <span class="label">Taux scolarisation</span>
+                </div>
+            </div>
+            
+            <div class="article-actions">
+                <a href="article/article5.html" class="btn-primary">Lire l'article complet</a>
+                <a href="#summary" class="btn-secondary">Voir le résumé</a>
+            </div>
+        </div>
+    </div>
+</section>
 
+<style>
+.weekly-synthesis {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 40px 20px;
+    margin: 40px 0;
+    border-radius: 15px;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.section-header h2 {
+    font-size: 2.2em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.section-header p {
+    font-size: 1.1em;
+    opacity: 0.9;
+}
+
+.featured-article {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.article-card {
+    background: white;
+    color: #333;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    position: relative;
+}
+
+.article-badge {
+    position: absolute;
+    top: -10px;
+    right: 20px;
+    background: #e74c3c;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+.article-card h3 {
+    color: #2c3e50;
+    font-size: 1.6em;
+    margin-bottom: 15px;
+    line-height: 1.3;
+}
+
+.article-meta {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.article-meta span {
+    background: #f8f9fa;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    border: 1px solid #e9ecef;
+}
+
+.article-excerpt {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    color: #555;
+}
+
+.article-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 15px;
+    margin-bottom: 25px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat .number {
+    display: block;
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.stat .label {
+    font-size: 0.8em;
+    color: #7f8c8d;
+}
+
+.article-actions {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn-primary, .btn-secondary {
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: #3498db;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(52, 152, 219, 0.4);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: #3498db;
+    border: 2px solid #3498db;
+}
+
+.btn-secondary:hover {
+    background: #3498db;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .article-meta {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .article-stats {
+        grid-template-columns: 1fr;
+    }
+    
+    .article-actions {
+        flex-direction: column;
+    }
+    
+    .btn-primary, .btn-secondary {
+        text-align: center;
+    }
+}
+</style>
             <!-- Article de synthèse avec photo du journaliste -->
             <section class="featured-article-main">
                 <div class="journalist-presentation">
