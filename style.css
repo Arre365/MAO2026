@@ -1986,3 +1986,128 @@ nav ul li a.active {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+/* Styles pour la carte article éducation */
+.news-article[data-category="education"] {
+    border-left: 4px solid #3498db;
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+}
+
+.category.education {
+    background: #3498db;
+    color: white;
+}
+
+.category.analyse {
+    background: #9b59b6;
+    color: white;
+}
+
+.article-author {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 15px 0;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border-left: 3px solid #3498db;
+}
+
+.author-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #3498db;
+}
+
+.author-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.author-name {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.author-title {
+    font-size: 0.85em;
+    color: #7f8c8d;
+}
+
+.key-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 15px;
+    margin: 20px 0;
+    padding: 20px;
+    background: #ecf0f1;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.stat-item {
+    padding: 10px;
+}
+
+.stat-number {
+    display: block;
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.stat-label {
+    font-size: 0.8em;
+    color: #7f8c8d;
+    margin-top: 5px;
+}
+
+.article-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #ecf0f1;
+}
+
+.read-full-article {
+    background: #3498db;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.read-full-article:hover {
+    background: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(52, 152, 219, 0.4);
+}
+
+.read-time {
+    color: #7f8c8d;
+    font-size: 0.9em;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .article-author {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .key-stats {
+        grid-template-columns: 1fr;
+    }
+    
+    .article-actions {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+}
